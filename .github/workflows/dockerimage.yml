@@ -20,8 +20,8 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME1 }}
-          password: ${{ secrets.DOCKER_HUB_PASSWORD1 }}
+          username: Salim1704
+          password: dckr_pat_aTFhs5OzPOO5TuU687E2gEdhLwo
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
@@ -29,5 +29,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME1 }}/challenge-1:latest
-            ${{ secrets.DOCKER_HUB_USERNAME1 }}/challenge-1:${{ github.sha }}
+            Salim1704/challenge-1:latest
+            Salim1704/challenge-1:${{ github.sha }}
