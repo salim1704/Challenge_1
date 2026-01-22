@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY app.py .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir flask
 
 EXPOSE 80
 
